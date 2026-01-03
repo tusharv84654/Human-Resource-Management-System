@@ -137,11 +137,11 @@ export default function ProfilePage() {
                                 transition: 'all 0.2s'
                             }}
                         >
-                            {tabIcons[tab]}
+                            {tabIcons[tab as keyof typeof tabIcons]}
                             {tab === 'salary' ? 'Salary Info' : tab === 'private' ? 'Private Info' : 'About'}
                         </button>
                     ))}
-                    
+
                 </div>
 
                 {/* Tab Content */}
